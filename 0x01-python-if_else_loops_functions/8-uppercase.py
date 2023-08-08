@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def uppercase(str):
     for char in str:
         ascii_value = ord(char)
@@ -5,4 +6,3 @@ def uppercase(str):
             ascii_value -= 32
         print("{:c}".format(ascii_value), end="")
     print()
-
