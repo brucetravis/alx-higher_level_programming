@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import hidden_4
 
 module_attributes = dir(hidden_4)
