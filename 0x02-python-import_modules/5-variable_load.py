@@ -1,3 +1,3 @@
-from variable_load_5.py import a
+from variable_load_5 import a
 
-print("a:", a)
+print(a)
