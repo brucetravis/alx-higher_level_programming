@@ -1,3 +1,2 @@
 #!/usr/bin/python3
-import string
-__import__('sys').stdout.write(string.ascii_uppercase + '\n')
+__import__('sys').stdout.write(bytes(range(65, 91)).decode('utf-8') + '\n')
