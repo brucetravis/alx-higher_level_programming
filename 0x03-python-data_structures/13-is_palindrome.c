@@ -1,24 +1,16 @@
+#include "lists.h"
 #include <stddef.h>
 
 /**
- * struct listint_s - singly linked list
- * @n: integer
- * @next: points to the next node
- *
- * Description: singly linked list node structure
- * for project
+ * is_palindrome - Checks if a singly linked list is a palindrome.
+ * @head: Pointer to a pointer to the head of the linked list.
+ * Return: 1 if it's a palindrome, 0 if it's not.
  */
-typedef struct listint_s
-{
-int n;
-struct listint_s *next;
-} listint_t;
-
 int is_palindrome(listint_t **head)
 {
 if (*head == NULL || (*head)->next == NULL)
 return (1);
-	
+
 listint_t *slow = *head;
 listint_t *fast = *head;
 
