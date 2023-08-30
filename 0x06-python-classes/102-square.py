@@ -4,6 +4,7 @@
 This module defines a Square class that represents a square shape.
 """
 
+
 class Square:
     """
     A class representing a square shape.
@@ -47,6 +48,7 @@ class Square:
 
     def __ge__(self, other):
         return self.area() >= other.area()
+
 
 if __name__ == "__main__":
     s_5 = Square(5)
