@@ -7,7 +7,7 @@ class Square:
     Attributes:
         __size (int): The size of the square.
     """
-    
+
     def __init__(self, size=0):
         """
         Initialize a new Square instance.
@@ -33,3 +33,14 @@ class Square:
             int: The area of the square.
         """
         return self.__size ** 2
+
+
+if __name__ == "__main__":
+    mysquare = Square(3)
+    print("{}".format(mysquare.area()))
+
+    mysquare = Square(89)
+    print("{}".format(mysquare.area()))
+
+    mysquare = Square()
+    print("{}".format(mysquare.area()))
