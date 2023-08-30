@@ -1,6 +1,11 @@
-#!/usr/bin/python3
-
 class Square:
+    """
+    A class representing a square shape.
+
+    Attributes:
+        size (int): The size of the square's sides.
+        position (tuple): The position of the square's top-left corner.
+    """
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
@@ -49,12 +54,15 @@ class Square:
             for _ in range(self.__position[1]):
                 result.append("\n")
             for _ in range(self.__size):
-                spaces = " " * self.__position[0]
-                hashes = "#" * self.__size
-                result.append(spaces + hashes + "\n")
+                result.append(" " * self.__position[0] + "#" * self.__size + "\n")
 
         return ''.join(result).strip()
 
 if __name__ == "__main__":
-    s = Square(5)
-    print(s)
+    my_square = Square(5, (0, 0))
+    print(my_square)
+
+    print("--")
+
+    my_square = Square(5, (4, 1))
+    print(my_square)
