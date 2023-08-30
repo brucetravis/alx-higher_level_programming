@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 
+
 """
 This module defines a Square class that represents a square shape.
 """
+
 
 class Square:
     """
@@ -37,6 +39,7 @@ class Square:
         elif value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
+
 
 if __name__ == "__main__":
     my_square_1 = Square(3)
