@@ -4,6 +4,14 @@ import math
 
 
 class MagicClass:
+    """
+    A class representing a magic circle.
+
+
+    Attributes:
+        radius (int or float): The radius of the magic circle.
+    """
+
     def __init__(self, radius=0):
         self.__radius = 0
         self.radius = radius
@@ -23,3 +31,9 @@ class MagicClass:
 
     def circumference(self):
         return 2 * math.pi * self.__radius
+
+
+if __name__ == "__main__":
+    mc = MagicClass(12)
+    print("{:.2f}".format(mc.area()))
+    print("{:.2f}".format(mc.circumference()))
