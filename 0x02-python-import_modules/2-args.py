@@ -5,11 +5,13 @@ if __name__ == "__main__":
 
     num_arguments = len(arguments)
 
-    print("{} argument{}:".format(
-        num_arguments, "" if num_arguments == 1 else "s"))
+    print("{} argument{}{}".format(
+        num_arguments,
+        "" if num_arguments == 1 else "s",
+        ":" if num_arguments > 0 else ""))
 
     if num_arguments == 0:
-        print(".")
+        print()
     else:
         for i, arg in enumerate(arguments, start=1):
             print("{}: {}".format(i, arg))
