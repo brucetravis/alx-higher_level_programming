@@ -13,6 +13,6 @@ def safe_print_list_integers(my_list=[], x=0):
         print()  # Print a newline after printing all integers
 
     except IndexError:
-        pass  # Handle the case where x is greater than the length of the list
+        pass  # Handle the case where x is greater than the available elements
 
     return count
