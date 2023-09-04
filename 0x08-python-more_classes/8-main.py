@@ -1,4 +1,3 @@
-guillaume@ubuntu:~/0x08$ cat 8-main.py
 #!/usr/bin/python3
 Rectangle = __import__('8-rectangle').Rectangle
 
