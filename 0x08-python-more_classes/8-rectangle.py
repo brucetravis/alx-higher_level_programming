@@ -1,5 +1,27 @@
 #!/usr/bin/python3
 
+"""
+This module defines the Rectangle class, which represents a geometric rectangle.
+
+The Rectangle class includes attributes and methods for working with rectangles, such as calculating area and perimeter,
+comparing rectangles, and more.
+
+Attributes:
+    number_of_instances (int): A class attribute to keep track of the number of Rectangle instances created.
+    print_symbol (str): A class attribute used to specify the symbol for string representation of rectangles.
+
+Methods:
+    __init__(self, width=0, height=0): Initializes a Rectangle instance with the specified width and height.
+    area(self): Calculates and returns the area of the rectangle.
+    perimeter(self): Calculates and returns the perimeter of the rectangle.
+    __str__(self): Returns a string representation of the rectangle using the specified print_symbol.
+    __repr__(self): Returns a string representation of the Rectangle instance.
+    __del__(self): Destructor method to clean up when a Rectangle instance is deleted.
+    bigger_or_equal(rect_1, rect_2): Static method to compare two Rectangle instances and return the larger one.
+
+"""
+
+
 class Rectangle:
     number_of_instances = 0
     print_symbol = "#"
