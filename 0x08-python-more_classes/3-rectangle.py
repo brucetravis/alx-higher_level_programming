@@ -1,6 +1,20 @@
 #!/usr/bin/python3
 
+
+"""
+This module defines the Rectangle class.
+"""
+
+
 class Rectangle:
+    """
+    A class that represents a rectangle.
+
+    Attributes:
+        width (int): The width of the rectangle.
+        height (int): The height of the rectangle.
+    """
+
     def __init__(self, width=0, height=0):
         self.__width = width
         self.__height = height
@@ -43,4 +57,4 @@ class Rectangle:
         return '\n'.join(['#' * self.__width for _ in range(self.__height)])
 
     def __repr__(self):
-        return "Rectangle({}, {})".format(self.__width, self.__height)
+        return f"Rectangle({self.__width}, {self.__height})"

@@ -1,6 +1,22 @@
 #!/usr/bin/python3
 
+"""
+This module defines a Rectangle class.
+
+The Rectangle class has width and height attributes, as well as methods for calculating area and perimeter.
+"""
+
 class Rectangle:
+    """
+    This is a simple Rectangle class.
+
+    It can be used to represent rectangles with width and height attributes.
+
+    Attributes:
+        width (int): The width of the rectangle.
+        height (int): The height of the rectangle.
+    """
+
     def __init__(self, width=0, height=0):
         self.__width = width
         self.__height = height
@@ -34,3 +50,29 @@ class Rectangle:
 
     def perimeter(self):
         return 2 * (self.__width + self.__height)
+
+if __name__ == "__main__":
+    myrectangle = Rectangle(2, 4)
+    print("{} - {} => {}".format(
+        myrectangle.width, myrectangle.height, myrectangle.area()
+    ))
+
+    myrectangle = Rectangle(2, 4)
+    print("{} - {} => {}".format(
+        myrectangle.width, myrectangle.height, myrectangle.perimeter()
+    ))
+
+    myrectangle = Rectangle(10, 10)
+    print("{} - {} => {} / {}".format(
+        myrectangle.width, myrectangle.height, myrectangle.area(), myrectangle.perimeter()
+    ))
+
+    myrectangle = Rectangle(10)
+    print("{} - {} => {} / {}".format(
+        myrectangle.width, myrectangle.height, myrectangle.area(), myrectangle.perimeter()
+    ))
+
+    myrectangle = Rectangle()
+    print("{} - {} => {} / {}".format(
+        myrectangle.width, myrectangle.height, myrectangle.area(), myrectangle.perimeter()
+    ))

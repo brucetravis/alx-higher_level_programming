@@ -1,6 +1,20 @@
 #!/usr/bin/python3
 
+
+"""
+This module defines the Rectangle class.
+"""
+
+
 class Rectangle:
+    """
+    A class that represents a rectangle.
+
+    Attributes:
+        width (int): The width of the rectangle.
+        height (int): The height of the rectangle.
+    """
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
