@@ -1,12 +1,1 @@
-#!/usr/bin/python3
-
-'''
-Module: type_example
-
-This module demonstrates the usage of the `type` function in Python.
-
-Usage:
-    You can import this module and use the `type` function to get the type of an object.
-'''
-
 type
