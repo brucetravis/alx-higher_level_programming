@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Defines a file-writing function."""
 
 
 def write_file(filename="", text=""):
@@ -13,13 +14,5 @@ def write_file(filename="", text=""):
     Returns:
         int: The number of characters written to the file.
     """
-    with open(filename, 'wb') as file:
-        nb_characters = file.write(text.encode('utf-8'))
-    return nb_characters
-
-
-if __name__ == "__main__":
-    nb_characters = write_file(
-            "my_first_file.txt", "This School is so cool!\n")
-
-    print(nb_characters)
+    with open(filename, "w", encoding="utf-8") as f:
+        return f.write(text)
