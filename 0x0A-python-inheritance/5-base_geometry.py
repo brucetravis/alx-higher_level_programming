@@ -15,7 +15,7 @@ if __name__ == "__main__":
     bg = BaseGeometry()
 
     print(f"BaseGeometry object: {bg}")
-    print(f"Attributes and methods of bg:")
+    print("Attributes and methods of bg:")
     print(dir(bg))
     print("Attributes and methods of BaseGeometry:")
     print(dir(BaseGeometry))
