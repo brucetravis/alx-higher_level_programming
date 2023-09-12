@@ -1,18 +1,21 @@
 #!/usr/bin/python3
 
-
 """
 This module defines an empty class BaseGeometry.
 """
 
 
 class BaseGeometry:
-    pass
+    """
+    This is the BaseGeometry class.
+    """
 
 
 if __name__ == "__main__":
     bg = BaseGeometry()
 
-    print(bg)  # Output: <__main__.BaseGeometry object at 0x7f2050c69208>
+    print(f"BaseGeometry object: {bg}")
+    print(f"Attributes and methods of bg:")
     print(dir(bg))
+    print("Attributes and methods of BaseGeometry:")
     print(dir(BaseGeometry))
