@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Defines a class Student."""
+
 
 class Student:
     def __init__(self, first_name, last_name, age):
