@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Check if URL argument is provided
+# Check if URL is provided as argument
 if [ -z "$1" ]; then
-    # Print usage message if URL is not provided
     echo "Usage: $0 <URL>"
     exit 1
 fi
 
-# Use curl to send a request and display the size of the body in bytes without headers
-curl -s "$1" | wc -c
+# Send request to the URL, follow redirects, and display the size of the body in bytes
+size=$(curl -sI "$1" | grep -i Content-Length | awk '{print $2}')
+echo "$size"
